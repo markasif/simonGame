@@ -3,6 +3,14 @@ var gamePattern=[];
 var userClickPattern=[];
 var started=false;
 var level=0;
+
+$(document).on("touchstart",function(){
+    if(!started){
+        $("#level-title").text("level "+level );
+        NextSequence();
+        started=true;
+    }
+} )
 // detecting a key press to start a game
 $(document).keypress(function () { 
     if(!started){
