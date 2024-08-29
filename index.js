@@ -40,7 +40,7 @@ if(userClickPattern.length==gamePattern.length){
 else{
     playSound("Wrong");
     $("body").addClass("game-over");
-    $("#level-title").text("Game Over, Press your Dick Size");
+    $("#level-title").text("Game Over, Tap Again..");
     setTimeout(function(){
         $("body").removeClass("game-over");},200);
         startOver();
